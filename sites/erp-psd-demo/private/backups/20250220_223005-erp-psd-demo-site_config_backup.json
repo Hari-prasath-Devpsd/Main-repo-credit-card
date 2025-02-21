@@ -1,0 +1,8 @@
+{
+ "db_name": "_31b1668520928051",
+ "db_password": "ENI3PigzooFsR8v4",
+ "db_type": "mariadb",
+  "redis_password": "frappe",
+  "admin_password": "frappe",
+  "encryption_key": "<12345678901234567890123456789012>"
+}

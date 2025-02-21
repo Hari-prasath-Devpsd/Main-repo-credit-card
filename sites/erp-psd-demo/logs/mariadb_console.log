@@ -1,0 +1,2 @@
+SELECT name, module, custom FROM tabDocType WHERE name = "Salary";
+exit;

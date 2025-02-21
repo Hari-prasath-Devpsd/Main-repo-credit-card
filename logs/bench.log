@@ -1,0 +1,343 @@
+2024-12-25 07:00:37,900 DEBUG cd erpnext-demo && python3 -m venv env
+2024-12-25 07:00:40,005 DEBUG cd erpnext-demo && /home/frappeusererp/erpnext-demo/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-25 07:00:41,099 DEBUG cd erpnext-demo && /home/frappeusererp/erpnext-demo/env/bin/python -m pip install --quiet wheel
+2024-12-25 07:00:41,832 LOG Getting frappe
+2024-12-25 07:00:41,833 DEBUG cd erpnext-demo/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2024-12-25 07:00:44,912 LOG Installing frappe
+2024-12-25 07:00:44,913 DEBUG cd /home/frappeusererp/erpnext-demo && /home/frappeusererp/erpnext-demo/env/bin/python -m pip install --quiet --upgrade -e /home/frappeusererp/erpnext-demo/apps/frappe 
+2024-12-25 07:01:01,645 DEBUG cd /home/frappeusererp/erpnext-demo/apps/frappe && yarn install --check-files
+2024-12-25 07:01:09,900 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-25 07:01:09,900 DEBUG cd erpnext-demo && bench build
+2024-12-25 07:01:09,979 INFO /usr/local/bin/bench build
+2024-12-25 07:01:25,978 LOG setting up backups
+2024-12-25 07:01:25,985 LOG backups were set up
+2024-12-25 07:01:25,985 INFO Bench erpnext-demo initialized
+2024-12-25 07:01:30,672 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2024-12-25 07:01:31,011 LOG Getting erpnext
+2024-12-25 07:01:31,012 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-12-25 07:01:35,959 LOG Installing erpnext
+2024-12-25 07:01:35,960 DEBUG cd /home/frappeusererp/erpnext-demo && /home/frappeusererp/erpnext-demo/env/bin/python -m pip install --quiet --upgrade -e /home/frappeusererp/erpnext-demo/apps/erpnext 
+2024-12-25 07:01:40,169 DEBUG cd /home/frappeusererp/erpnext-demo/apps/erpnext && yarn install --check-files
+2024-12-25 07:01:40,557 DEBUG bench build --app erpnext
+2024-12-25 07:01:40,635 INFO /usr/local/bin/bench build --app erpnext
+2024-12-25 07:01:46,207 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-25 07:01:47,398 INFO /usr/local/bin/bench new-site erp-psd-demo
+2024-12-25 07:07:20,617 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2024-12-25 07:07:22,632 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-12-25
+2024-12-25 07:07:22,634 LOG Getting erpnext
+2024-12-25 07:07:22,634 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-12-25 07:07:27,458 LOG Installing erpnext
+2024-12-25 07:07:27,458 DEBUG cd /home/frappeusererp/erpnext-demo && /home/frappeusererp/erpnext-demo/env/bin/python -m pip install --quiet --upgrade -e /home/frappeusererp/erpnext-demo/apps/erpnext 
+2024-12-25 07:07:28,650 DEBUG cd /home/frappeusererp/erpnext-demo/apps/erpnext && yarn install --check-files
+2024-12-25 07:07:29,030 DEBUG bench build --app erpnext
+2024-12-25 07:07:29,109 INFO /usr/local/bin/bench build --app erpnext
+2024-12-25 07:07:34,729 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-12-25 07:07:39,540 INFO /usr/local/bin/bench new-site erp-psd-demo
+2024-12-25 07:07:46,071 INFO /usr/local/bin/bench --site erp-psd-demo install-app erpnext
+2024-12-25 07:08:16,050 INFO /usr/local/bin/bench droup-site erp-psd-demo
+2024-12-25 07:08:24,266 INFO /usr/local/bin/bench drop-site erp-psd-demo
+2024-12-25 07:08:33,230 INFO /usr/local/bin/bench drop-site erp-psd-demo --force
+2024-12-25 12:00:01,625 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-25 18:00:01,431 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-26 00:00:01,417 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-26 06:00:01,217 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-26 12:00:01,630 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-26 18:00:02,303 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-27 00:00:02,246 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-27 06:00:01,959 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-27 12:00:01,984 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-27 18:00:01,838 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-28 00:00:01,931 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-28 06:00:01,598 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-28 12:00:02,258 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-28 18:00:01,540 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-29 00:00:01,916 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-29 06:00:02,209 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-29 12:00:02,018 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-29 18:00:02,108 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-30 00:00:02,280 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-30 06:00:01,412 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-30 12:00:01,749 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-30 15:08:50,108 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2024-12-30 15:08:52,704 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-12-30
+2024-12-30 15:08:52,706 LOG Getting erpnext
+2024-12-30 15:08:52,706 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2024-12-30 15:08:57,230 LOG Installing erpnext
+2024-12-30 15:08:57,231 DEBUG cd /home/frappeusererp/erpnext-demo && /home/frappeusererp/erpnext-demo/env/bin/python -m pip install --quiet --upgrade -e /home/frappeusererp/erpnext-demo/apps/erpnext 
+2024-12-30 15:08:58,993 DEBUG cd /home/frappeusererp/erpnext-demo/apps/erpnext && yarn install --check-files
+2024-12-30 15:08:59,666 DEBUG bench build --app erpnext
+2024-12-30 15:08:59,745 INFO /usr/local/bin/bench build --app erpnext
+2024-12-30 15:09:03,283 DEBUG cd /home/frappeusererp/erpnext-demo && sudo supervisorctl restart frappe:
+2024-12-30 15:09:03,415 WARNING cd /home/frappeusererp/erpnext-demo && sudo supervisorctl restart frappe: executed with exit code 2
+2024-12-30 15:09:03,415 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-12-30 15:09:13,641 INFO /usr/local/bin/bench new-site erp-psd-demo
+2024-12-30 15:09:23,740 INFO /usr/local/bin/bench drop-site erp-psd-demo
+2024-12-30 15:09:31,331 INFO /usr/local/bin/bench drop-site erp-psd-demo --force
+2024-12-30 15:09:37,657 INFO /usr/local/bin/bench new-site erp-psd-demo
+2024-12-30 15:11:13,902 INFO /usr/local/bin/bench --site erp-psd-demo install-app erpnext
+2024-12-30 15:12:35,153 INFO /usr/local/bin/bench use erp-psd-demo
+2024-12-30 15:12:40,522 INFO /usr/local/bin/bench start
+2024-12-30 15:14:54,393 INFO /usr/local/bin/bench start
+2024-12-30 15:15:11,390 INFO /usr/local/bin/bench use erp-psd-demo
+2024-12-30 15:15:20,638 INFO /usr/local/bin/bench --site erp-psd-demo install-app erpnextcls
+2024-12-30 18:00:02,052 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-31 00:00:02,261 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-31 06:00:01,493 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-31 06:15:01,709 INFO /usr/local/bin/bench init erpnext-card --frappe-branch version-14
+2024-12-31 06:15:01,742 DEBUG cd erpnext-card && python3 -m venv env
+2024-12-31 06:15:05,599 DEBUG cd erpnext-card && /home/frappeusererp/erpnext-demo/erpnext-card/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-31 06:15:06,840 DEBUG cd erpnext-card && /home/frappeusererp/erpnext-demo/erpnext-card/env/bin/python -m pip install --quiet wheel
+2024-12-31 06:15:07,469 WARNING /usr/local/bin/bench init erpnext-card --frappe-branch version-14 executed with exit code 1
+2024-12-31 12:00:02,450 INFO /usr/local/bin/bench --verbose --site all backup
+2024-12-31 18:00:01,874 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-01 00:00:02,465 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-01 06:00:01,867 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-01 12:00:02,118 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-01 18:00:01,733 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-02 00:00:02,466 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-02 06:00:02,570 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-02 12:00:01,799 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-02 18:00:02,115 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-03 00:00:02,664 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-03 06:00:02,339 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-03 12:00:02,500 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-03 18:00:01,571 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-04 00:00:02,275 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-04 06:00:02,238 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-04 12:00:02,480 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-04 18:00:02,264 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-05 00:00:02,384 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-05 06:00:01,687 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-05 12:00:02,578 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-05 18:00:01,697 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-06 00:00:02,206 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-06 06:00:02,262 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-06 12:00:02,456 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-06 18:00:01,699 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-07 00:00:02,586 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-07 06:00:01,954 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-07 12:00:01,995 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-07 18:00:02,426 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 00:00:02,585 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 06:00:01,829 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 12:00:02,104 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-08 18:00:01,866 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-09 00:00:01,955 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-09 06:00:02,237 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-09 12:00:02,375 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-09 18:00:02,137 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-10 00:00:02,158 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-10 06:00:02,207 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-10 12:00:02,196 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-10 18:00:02,405 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-11 00:00:02,740 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-11 06:00:01,850 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-11 12:00:01,754 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-11 18:00:01,958 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-12 00:00:02,211 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-12 06:00:01,864 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-12 12:00:02,093 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-12 18:00:01,975 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 00:00:02,372 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 06:00:02,606 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 12:00:02,575 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-13 18:00:02,566 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-14 00:00:02,402 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-14 06:00:01,663 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-14 12:00:01,913 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-14 18:00:01,864 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-15 00:00:03,075 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-15 06:00:02,703 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-15 12:00:02,242 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-15 18:00:02,227 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-16 00:00:02,858 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-16 06:00:02,928 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-16 12:00:02,122 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-16 18:00:02,567 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-17 00:00:02,755 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-17 06:00:02,726 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-17 12:00:02,056 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-17 18:00:02,469 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-18 00:00:02,575 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-18 06:00:02,083 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-18 12:00:01,781 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-18 18:00:02,647 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-19 00:00:02,721 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-19 06:00:02,318 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-19 12:00:02,262 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-19 18:00:01,974 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-20 00:00:02,356 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-20 06:00:02,498 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-20 12:00:02,630 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-20 18:00:01,747 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-21 00:00:02,143 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-21 06:00:01,974 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-21 12:00:02,290 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-21 18:00:02,666 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-22 00:00:02,540 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-22 06:00:02,309 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-22 12:00:02,054 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-22 18:00:02,161 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-23 00:00:02,377 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-23 06:00:02,171 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-23 12:00:02,339 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-23 18:00:02,606 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-24 00:00:01,998 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-24 06:00:02,036 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-24 12:00:02,001 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-24 18:00:01,965 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-25 00:00:02,719 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-25 06:00:01,762 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-25 12:00:01,961 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-25 18:00:02,382 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-26 00:00:02,584 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-26 06:00:01,789 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-26 12:00:01,842 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-26 18:00:02,321 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-27 00:00:01,972 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-27 06:00:02,232 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-27 12:00:02,703 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-27 18:00:02,148 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-28 00:00:01,756 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-28 06:00:02,508 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-28 12:00:02,522 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-28 18:00:02,506 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-29 00:00:02,336 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-29 06:00:01,939 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-29 12:00:01,828 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-29 18:00:02,604 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-30 00:00:02,743 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-30 06:00:02,477 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-30 12:00:02,171 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-30 18:00:02,503 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-31 00:00:02,384 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-31 06:00:02,118 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-31 12:00:02,196 INFO /usr/local/bin/bench --verbose --site all backup
+2025-01-31 18:00:02,097 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-01 00:00:01,895 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-01 06:00:02,596 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-01 12:00:02,601 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-01 18:00:02,564 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-02 00:00:01,966 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-02 06:00:02,627 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-02 12:00:01,908 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-02 18:00:01,974 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-03 00:00:02,294 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-03 06:00:01,789 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-03 12:00:01,846 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-03 18:00:01,860 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-04 00:00:01,749 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-04 06:00:01,688 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-04 12:00:01,834 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-04 18:00:02,120 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-05 00:00:02,566 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-05 06:00:02,150 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-05 12:00:01,807 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-05 18:00:02,188 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-06 00:00:02,207 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-06 06:00:02,592 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-06 12:00:01,960 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-06 18:00:02,339 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-07 00:00:02,407 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-07 06:00:02,688 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-07 12:00:01,737 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-07 18:00:02,160 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-08 00:00:02,505 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-08 06:00:01,874 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-08 12:00:01,928 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-08 18:00:02,563 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-09 00:00:02,480 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-09 06:00:02,300 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-09 12:00:02,050 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-09 18:00:02,218 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-10 00:00:02,566 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-10 06:00:02,060 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-10 12:00:02,988 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-10 18:00:02,277 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-11 00:00:02,692 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-11 06:00:02,105 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-11 12:00:02,533 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-11 18:00:02,506 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-12 00:00:03,399 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-12 06:00:02,918 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-12 12:00:02,559 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-12 18:00:02,173 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-13 00:00:02,082 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-13 06:00:02,115 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-13 12:00:02,477 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-13 18:00:02,790 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-14 00:00:03,082 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-14 06:00:02,647 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-14 12:00:02,511 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-14 18:00:02,466 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-15 00:00:02,625 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-15 06:00:01,984 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-15 06:04:14,035 INFO /usr/local/bin/bench start
+2025-02-15 06:04:14,517 INFO /usr/local/bin/bench serve --port 8001
+2025-02-15 06:04:14,519 INFO /usr/local/bin/bench watch
+2025-02-15 06:04:14,525 INFO /usr/local/bin/bench worker
+2025-02-15 06:04:14,532 INFO /usr/local/bin/bench schedule
+2025-02-15 06:19:43,546 INFO /usr/local/bin/bench start
+2025-02-15 06:19:44,179 INFO /usr/local/bin/bench serve --port 8001
+2025-02-15 06:19:44,197 INFO /usr/local/bin/bench schedule
+2025-02-15 06:19:44,198 INFO /usr/local/bin/bench worker
+2025-02-15 06:19:44,201 INFO /usr/local/bin/bench watch
+2025-02-15 06:20:21,195 INFO /usr/local/bin/bench start --port 9001
+2025-02-15 06:20:21,198 WARNING /usr/local/bin/bench start --port 9001 executed with exit code 2
+2025-02-15 06:21:24,026 INFO /usr/local/bin/bench start
+2025-02-15 06:21:24,487 INFO /usr/local/bin/bench serve --port 9001
+2025-02-15 06:21:24,491 INFO /usr/local/bin/bench schedule
+2025-02-15 06:21:24,497 INFO /usr/local/bin/bench watch
+2025-02-15 06:21:24,503 INFO /usr/local/bin/bench worker
+2025-02-15 06:22:08,765 INFO /usr/local/bin/bench start
+2025-02-15 06:22:09,231 INFO /usr/local/bin/bench watch
+2025-02-15 06:22:09,238 INFO /usr/local/bin/bench serve --port 9001
+2025-02-15 06:22:09,245 INFO /usr/local/bin/bench schedule
+2025-02-15 06:22:09,250 INFO /usr/local/bin/bench worker
+2025-02-15 07:18:25,039 INFO /usr/local/bin/bench start
+2025-02-15 07:18:25,616 INFO /usr/local/bin/bench schedule
+2025-02-15 07:18:25,626 INFO /usr/local/bin/bench watch
+2025-02-15 07:18:25,630 INFO /usr/local/bin/bench serve --port 9001
+2025-02-15 07:18:25,641 INFO /usr/local/bin/bench worker
+2025-02-15 07:20:44,690 INFO /usr/local/bin/bench start
+2025-02-15 07:20:45,191 INFO /usr/local/bin/bench schedule
+2025-02-15 07:20:45,201 INFO /usr/local/bin/bench watch
+2025-02-15 07:20:45,208 INFO /usr/local/bin/bench serve --port 9001
+2025-02-15 07:20:45,224 INFO /usr/local/bin/bench worker
+2025-02-15 07:21:48,029 INFO /usr/local/bin/bench start
+2025-02-15 07:21:48,499 INFO /usr/local/bin/bench schedule
+2025-02-15 07:21:48,506 INFO /usr/local/bin/bench watch
+2025-02-15 07:21:48,512 INFO /usr/local/bin/bench serve --port 8009
+2025-02-15 07:21:48,529 INFO /usr/local/bin/bench worker
+2025-02-15 08:44:56,958 INFO /usr/local/bin/bench --site erp-psd-demo set-admin-password admin
+2025-02-15 12:00:02,287 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-15 18:00:02,194 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-16 00:00:02,844 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-16 06:00:02,124 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-16 12:00:02,593 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-16 18:00:01,990 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-17 00:00:02,699 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-17 06:00:02,485 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-17 12:00:02,460 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-17 18:00:02,596 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-18 00:00:02,788 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-18 06:00:01,851 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-18 12:00:01,950 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-18 18:00:02,070 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-19 00:00:02,774 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-19 06:00:02,760 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-19 09:10:53,292 INFO /usr/local/bin/bench list-apps
+2025-02-19 09:28:51,222 INFO /usr/local/bin/bench --site erp-psd-demo console
+2025-02-19 12:00:01,905 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-19 18:00:02,367 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-20 00:00:02,931 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-20 06:00:02,718 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-20 09:35:59,820 INFO /usr/local/bin/bench --site erp-psd-demo mariadb
+2025-02-20 09:37:05,084 INFO /usr/local/bin/bench --site erp-psd-demo export-fixtures
+2025-02-20 09:39:07,133 INFO /usr/local/bin/bench clear-cache
+2025-02-20 09:42:49,537 INFO /usr/local/bin/bench --site erp-psd-demo export-fixtures
+2025-02-20 09:43:05,867 INFO /usr/local/bin/bench --site erp-psd-demo export-fixtures --doctype Salary
+2025-02-20 12:00:02,461 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-20 18:00:02,521 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-21 00:00:02,900 INFO /usr/local/bin/bench --verbose --site all backup
+2025-02-21 06:00:02,312 INFO /usr/local/bin/bench --verbose --site all backup

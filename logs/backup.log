@@ -1,0 +1,2130 @@
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.10/socket.py", line 857, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.10/socket.py", line 857, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.10/socket.py", line 857, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.10/socket.py", line 857, in create_connection
+    raise err
+  File "/usr/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_31b1668520928051'")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_31b1668520928051'")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1049, "Unknown database '_31b1668520928051'")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 564, in new_backup
+    odb = BackupGenerator(
+  File "apps/frappe/frappe/utils/backups.py", line 84, in __init__
+    self.setup_backup_tables()
+  File "apps/frappe/frappe/utils/backups.py", line 116, in setup_backup_tables
+    existing_tables = frappe.db.get_tables()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 441, in get_tables
+    frappe.qb.from_(information_schema.tables)
+  File "apps/frappe/frappe/query_builder/utils.py", line 87, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "apps/frappe/frappe/database/database.py", line 221, in sql
+    self.connect()
+  File "apps/frappe/frappe/database/database.py", line 126, in connect
+    self._conn: "MariadbConnection" | "PostgresConnection" = self.get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 103, in get_connection
+    conn = self._get_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 109, in _get_connection
+    return self.create_connection()
+  File "apps/frappe/frappe/database/mariadb/database.py", line 112, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 669, in connect
+    self._request_authentication()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 957, in _request_authentication
+    auth_packet = self._read_packet()
+  File "env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user '_31b1668520928051'@'localhost' (using password: YES)")
+
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20241230_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2024-12-30 22:30:10.514282
+Config  : ./erp-psd-demo/private/backups/20241230_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20241230_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20241231_043003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2024-12-31 04:30:09.775564
+Config  : ./erp-psd-demo/private/backups/20241231_043003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20241231_043003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20241231_103003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2024-12-31 10:30:10.307858
+Config  : ./erp-psd-demo/private/backups/20241231_103003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20241231_103003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20241231_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2024-12-31 16:30:16.718021
+Config  : ./erp-psd-demo/private/backups/20241231_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20241231_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20241231_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2024-12-31 22:30:14.991664
+Config  : ./erp-psd-demo/private/backups/20241231_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20241231_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250101_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-01 04:30:21.919557
+Config  : ./erp-psd-demo/private/backups/20250101_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250101_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250101_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-01 10:30:15.128375
+Config  : ./erp-psd-demo/private/backups/20250101_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250101_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250101_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-01 16:30:14.603559
+Config  : ./erp-psd-demo/private/backups/20250101_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250101_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250101_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-01 22:30:22.258017
+Config  : ./erp-psd-demo/private/backups/20250101_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250101_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250102_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-02 04:30:14.272260
+Config  : ./erp-psd-demo/private/backups/20250102_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250102_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250102_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-02 10:30:14.516463
+Config  : ./erp-psd-demo/private/backups/20250102_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250102_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250102_163003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-02 16:30:22.241267
+Config  : ./erp-psd-demo/private/backups/20250102_163003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250102_163003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250102_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-02 22:30:14.753364
+Config  : ./erp-psd-demo/private/backups/20250102_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250102_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250103_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-03 04:30:15.291403
+Config  : ./erp-psd-demo/private/backups/20250103_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250103_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250103_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-03 10:30:22.199843
+Config  : ./erp-psd-demo/private/backups/20250103_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250103_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250103_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-03 16:30:14.728736
+Config  : ./erp-psd-demo/private/backups/20250103_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250103_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250103_223003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-03 22:30:13.801590
+Config  : ./erp-psd-demo/private/backups/20250103_223003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250103_223003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250104_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-04 04:30:17.496228
+Config  : ./erp-psd-demo/private/backups/20250104_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250104_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250104_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-04 10:30:14.393011
+Config  : ./erp-psd-demo/private/backups/20250104_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250104_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250104_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-04 16:30:14.111002
+Config  : ./erp-psd-demo/private/backups/20250104_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250104_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250104_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-04 22:30:14.967351
+Config  : ./erp-psd-demo/private/backups/20250104_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250104_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250105_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-05 04:30:14.788052
+Config  : ./erp-psd-demo/private/backups/20250105_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250105_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250105_103003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-05 10:30:13.892016
+Config  : ./erp-psd-demo/private/backups/20250105_103003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250105_103003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250105_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-05 16:30:14.353279
+Config  : ./erp-psd-demo/private/backups/20250105_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250105_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250105_223003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-05 22:30:13.578066
+Config  : ./erp-psd-demo/private/backups/20250105_223003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250105_223003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250106_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-06 04:30:22.305213
+Config  : ./erp-psd-demo/private/backups/20250106_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250106_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250106_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-06 10:30:14.471025
+Config  : ./erp-psd-demo/private/backups/20250106_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250106_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250106_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-06 16:30:14.425969
+Config  : ./erp-psd-demo/private/backups/20250106_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250106_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250106_223003-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-06 22:30:17.727523
+Config  : ./erp-psd-demo/private/backups/20250106_223003-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250106_223003-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250107_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-07 04:30:14.878170
+Config  : ./erp-psd-demo/private/backups/20250107_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250107_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250107_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-07 10:30:13.874568
+Config  : ./erp-psd-demo/private/backups/20250107_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250107_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250107_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-07 16:30:14.326348
+Config  : ./erp-psd-demo/private/backups/20250107_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250107_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250107_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-07 22:30:14.169235
+Config  : ./erp-psd-demo/private/backups/20250107_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250107_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250108_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-08 04:30:14.821520
+Config  : ./erp-psd-demo/private/backups/20250108_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250108_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250108_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-08 10:30:14.219814
+Config  : ./erp-psd-demo/private/backups/20250108_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250108_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250108_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-08 16:30:14.203056
+Config  : ./erp-psd-demo/private/backups/20250108_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250108_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250108_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-08 22:30:14.137606
+Config  : ./erp-psd-demo/private/backups/20250108_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250108_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250109_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-09 04:30:14.307262
+Config  : ./erp-psd-demo/private/backups/20250109_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250109_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250109_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-09 10:30:14.039323
+Config  : ./erp-psd-demo/private/backups/20250109_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250109_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250109_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-09 16:30:22.668741
+Config  : ./erp-psd-demo/private/backups/20250109_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250109_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250109_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-09 22:30:29.195741
+Config  : ./erp-psd-demo/private/backups/20250109_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250109_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250110_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-10 04:30:25.103703
+Config  : ./erp-psd-demo/private/backups/20250110_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250110_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250110_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-10 10:30:31.466825
+Config  : ./erp-psd-demo/private/backups/20250110_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250110_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250110_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-10 16:30:26.259344
+Config  : ./erp-psd-demo/private/backups/20250110_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250110_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250110_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-10 22:30:35.806095
+Config  : ./erp-psd-demo/private/backups/20250110_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250110_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250111_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-11 04:30:27.356014
+Config  : ./erp-psd-demo/private/backups/20250111_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250111_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250111_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-11 10:30:31.034216
+Config  : ./erp-psd-demo/private/backups/20250111_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250111_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250111_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-11 16:30:27.115629
+Config  : ./erp-psd-demo/private/backups/20250111_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250111_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250111_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-11 22:30:22.367412
+Config  : ./erp-psd-demo/private/backups/20250111_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250111_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250112_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-12 04:30:32.691373
+Config  : ./erp-psd-demo/private/backups/20250112_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250112_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250112_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-12 10:30:22.313318
+Config  : ./erp-psd-demo/private/backups/20250112_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250112_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250112_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-12 16:30:32.779896
+Config  : ./erp-psd-demo/private/backups/20250112_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250112_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250112_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-12 22:30:22.373813
+Config  : ./erp-psd-demo/private/backups/20250112_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250112_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250113_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-13 04:30:35.007503
+Config  : ./erp-psd-demo/private/backups/20250113_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250113_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250113_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-13 10:30:28.980646
+Config  : ./erp-psd-demo/private/backups/20250113_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250113_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250113_163006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-13 16:30:36.413125
+Config  : ./erp-psd-demo/private/backups/20250113_163006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250113_163006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250113_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-13 22:30:27.430444
+Config  : ./erp-psd-demo/private/backups/20250113_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250113_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250114_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-14 04:30:33.276613
+Config  : ./erp-psd-demo/private/backups/20250114_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250114_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250114_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-14 10:30:28.849818
+Config  : ./erp-psd-demo/private/backups/20250114_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250114_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250114_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-14 16:30:23.213779
+Config  : ./erp-psd-demo/private/backups/20250114_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250114_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250114_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-14 22:30:29.504416
+Config  : ./erp-psd-demo/private/backups/20250114_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250114_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250115_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-15 04:30:26.639641
+Config  : ./erp-psd-demo/private/backups/20250115_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250115_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250115_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-15 10:30:35.363702
+Config  : ./erp-psd-demo/private/backups/20250115_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250115_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250115_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-15 16:30:25.696376
+Config  : ./erp-psd-demo/private/backups/20250115_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250115_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250115_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-15 22:30:31.055090
+Config  : ./erp-psd-demo/private/backups/20250115_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250115_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250116_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-16 04:30:29.663192
+Config  : ./erp-psd-demo/private/backups/20250116_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250116_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250116_103006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-16 10:30:32.231238
+Config  : ./erp-psd-demo/private/backups/20250116_103006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250116_103006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250116_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-16 16:30:27.151017
+Config  : ./erp-psd-demo/private/backups/20250116_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250116_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250116_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-16 22:30:23.189840
+Config  : ./erp-psd-demo/private/backups/20250116_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250116_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250117_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-17 04:30:28.269691
+Config  : ./erp-psd-demo/private/backups/20250117_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250117_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250117_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-17 10:30:27.230457
+Config  : ./erp-psd-demo/private/backups/20250117_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250117_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250117_163005-erp-psd-demo-database.sql.gz
+
+Backup failed for Site erp-psd-demo. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 823, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 190, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 461, in take_dump
+    frappe.utils.execute_in_shell(command, low_priority=True, check_exit_code=True)
+  File "apps/frappe/frappe/utils/__init__.py", line 489, in execute_in_shell
+    raise Exception("Command failed")
+Exception: Command failed
+
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250117_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-17 22:30:27.295521
+Config  : ./erp-psd-demo/private/backups/20250117_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250117_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250118_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-18 04:30:27.876949
+Config  : ./erp-psd-demo/private/backups/20250118_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250118_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250118_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-18 10:30:25.507585
+Config  : ./erp-psd-demo/private/backups/20250118_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250118_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250118_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-18 16:30:17.394346
+Config  : ./erp-psd-demo/private/backups/20250118_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250118_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250118_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-18 22:30:14.474370
+Config  : ./erp-psd-demo/private/backups/20250118_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250118_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250119_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-19 04:30:15.417826
+Config  : ./erp-psd-demo/private/backups/20250119_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250119_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250119_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-19 10:30:15.411108
+Config  : ./erp-psd-demo/private/backups/20250119_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250119_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250119_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-19 16:30:15.898498
+Config  : ./erp-psd-demo/private/backups/20250119_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250119_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250119_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-19 22:30:14.514451
+Config  : ./erp-psd-demo/private/backups/20250119_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250119_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250120_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-20 04:30:14.453943
+Config  : ./erp-psd-demo/private/backups/20250120_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250120_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250120_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-20 10:30:14.523731
+Config  : ./erp-psd-demo/private/backups/20250120_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250120_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250120_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-20 16:30:14.656119
+Config  : ./erp-psd-demo/private/backups/20250120_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250120_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250120_223004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-20 22:30:13.904649
+Config  : ./erp-psd-demo/private/backups/20250120_223004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250120_223004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250121_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-21 04:30:13.960063
+Config  : ./erp-psd-demo/private/backups/20250121_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250121_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250121_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-21 10:30:14.187900
+Config  : ./erp-psd-demo/private/backups/20250121_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250121_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250121_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-21 16:30:15.148713
+Config  : ./erp-psd-demo/private/backups/20250121_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250121_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250121_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-21 22:30:14.872720
+Config  : ./erp-psd-demo/private/backups/20250121_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250121_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250122_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-22 04:30:16.125506
+Config  : ./erp-psd-demo/private/backups/20250122_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250122_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250122_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-22 10:30:15.832043
+Config  : ./erp-psd-demo/private/backups/20250122_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250122_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250122_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-22 16:30:14.378197
+Config  : ./erp-psd-demo/private/backups/20250122_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250122_163004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250122_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-22 22:30:14.260217
+Config  : ./erp-psd-demo/private/backups/20250122_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250122_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250123_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-23 04:30:14.084532
+Config  : ./erp-psd-demo/private/backups/20250123_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250123_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250123_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-23 10:30:14.019110
+Config  : ./erp-psd-demo/private/backups/20250123_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250123_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250123_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-23 16:30:14.301509
+Config  : ./erp-psd-demo/private/backups/20250123_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250123_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250123_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-23 22:30:14.859272
+Config  : ./erp-psd-demo/private/backups/20250123_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250123_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250124_043004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-24 04:30:14.039136
+Config  : ./erp-psd-demo/private/backups/20250124_043004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250124_043004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250124_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-24 10:30:14.718954
+Config  : ./erp-psd-demo/private/backups/20250124_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250124_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250124_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-24 16:30:15.788534
+Config  : ./erp-psd-demo/private/backups/20250124_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250124_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250124_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-24 22:30:16.589903
+Config  : ./erp-psd-demo/private/backups/20250124_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250124_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250125_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-25 04:30:14.665678
+Config  : ./erp-psd-demo/private/backups/20250125_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250125_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250125_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-25 10:30:14.487885
+Config  : ./erp-psd-demo/private/backups/20250125_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250125_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250125_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-25 16:30:16.149401
+Config  : ./erp-psd-demo/private/backups/20250125_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250125_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250125_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-25 22:30:14.102407
+Config  : ./erp-psd-demo/private/backups/20250125_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250125_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250126_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-26 04:30:15.557484
+Config  : ./erp-psd-demo/private/backups/20250126_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250126_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250126_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-26 10:30:13.826310
+Config  : ./erp-psd-demo/private/backups/20250126_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250126_103004-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250126_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-26 16:30:14.228407
+Config  : ./erp-psd-demo/private/backups/20250126_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250126_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250126_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-26 22:30:14.569790
+Config  : ./erp-psd-demo/private/backups/20250126_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250126_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250127_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-27 04:30:13.911856
+Config  : ./erp-psd-demo/private/backups/20250127_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250127_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250127_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-27 10:30:14.415995
+Config  : ./erp-psd-demo/private/backups/20250127_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250127_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250127_163006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-27 16:30:16.105151
+Config  : ./erp-psd-demo/private/backups/20250127_163006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250127_163006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250127_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-27 22:30:14.974252
+Config  : ./erp-psd-demo/private/backups/20250127_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250127_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250128_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-28 04:30:14.046087
+Config  : ./erp-psd-demo/private/backups/20250128_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250128_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250128_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-28 10:30:15.255736
+Config  : ./erp-psd-demo/private/backups/20250128_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250128_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250128_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-28 16:30:15.152447
+Config  : ./erp-psd-demo/private/backups/20250128_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250128_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250128_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-28 22:30:15.160944
+Config  : ./erp-psd-demo/private/backups/20250128_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250128_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250129_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-29 04:30:14.600059
+Config  : ./erp-psd-demo/private/backups/20250129_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250129_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250129_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-29 10:30:14.418866
+Config  : ./erp-psd-demo/private/backups/20250129_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250129_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250129_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-29 16:30:14.363230
+Config  : ./erp-psd-demo/private/backups/20250129_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250129_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250129_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-29 22:30:15.104589
+Config  : ./erp-psd-demo/private/backups/20250129_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250129_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250130_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-30 04:30:15.196863
+Config  : ./erp-psd-demo/private/backups/20250130_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250130_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250130_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-30 10:30:16.708433
+Config  : ./erp-psd-demo/private/backups/20250130_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250130_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250130_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-30 16:30:16.255871
+Config  : ./erp-psd-demo/private/backups/20250130_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250130_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250130_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-30 22:30:15.367231
+Config  : ./erp-psd-demo/private/backups/20250130_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250130_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250131_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-31 04:30:14.731178
+Config  : ./erp-psd-demo/private/backups/20250131_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250131_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250131_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-31 10:30:14.897229
+Config  : ./erp-psd-demo/private/backups/20250131_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250131_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250131_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-31 16:30:15.104855
+Config  : ./erp-psd-demo/private/backups/20250131_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250131_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250131_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-01-31 22:30:14.708015
+Config  : ./erp-psd-demo/private/backups/20250131_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250131_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250201_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-01 04:30:14.067790
+Config  : ./erp-psd-demo/private/backups/20250201_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250201_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250201_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-01 10:30:15.411738
+Config  : ./erp-psd-demo/private/backups/20250201_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250201_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250201_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-01 16:30:18.189312
+Config  : ./erp-psd-demo/private/backups/20250201_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250201_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250201_223006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-01 22:30:18.395115
+Config  : ./erp-psd-demo/private/backups/20250201_223006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250201_223006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250202_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-02 04:30:18.344137
+Config  : ./erp-psd-demo/private/backups/20250202_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250202_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250202_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-02 10:30:18.159296
+Config  : ./erp-psd-demo/private/backups/20250202_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250202_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250202_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-02 16:30:17.678823
+Config  : ./erp-psd-demo/private/backups/20250202_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250202_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250202_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-02 22:30:17.198269
+Config  : ./erp-psd-demo/private/backups/20250202_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250202_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250203_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-03 04:30:18.395268
+Config  : ./erp-psd-demo/private/backups/20250203_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250203_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250203_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-03 10:30:17.610720
+Config  : ./erp-psd-demo/private/backups/20250203_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250203_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250203_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-03 16:30:17.329821
+Config  : ./erp-psd-demo/private/backups/20250203_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250203_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250203_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-03 22:30:17.356251
+Config  : ./erp-psd-demo/private/backups/20250203_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250203_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250204_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-04 04:30:17.419925
+Config  : ./erp-psd-demo/private/backups/20250204_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250204_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250204_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-04 10:30:17.487733
+Config  : ./erp-psd-demo/private/backups/20250204_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250204_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250204_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-04 16:30:17.886308
+Config  : ./erp-psd-demo/private/backups/20250204_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250204_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250204_223006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-04 22:30:16.918134
+Config  : ./erp-psd-demo/private/backups/20250204_223006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250204_223006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250205_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-05 04:30:15.555500
+Config  : ./erp-psd-demo/private/backups/20250205_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250205_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250205_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-05 10:30:15.112137
+Config  : ./erp-psd-demo/private/backups/20250205_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250205_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250205_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-05 16:30:14.777676
+Config  : ./erp-psd-demo/private/backups/20250205_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250205_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250205_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-05 22:30:16.122074
+Config  : ./erp-psd-demo/private/backups/20250205_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250205_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250206_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-06 04:30:15.304260
+Config  : ./erp-psd-demo/private/backups/20250206_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250206_043005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250206_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-06 10:30:15.319689
+Config  : ./erp-psd-demo/private/backups/20250206_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250206_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250206_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-06 16:30:16.652269
+Config  : ./erp-psd-demo/private/backups/20250206_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250206_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250206_223006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-06 22:30:17.551581
+Config  : ./erp-psd-demo/private/backups/20250206_223006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250206_223006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250207_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-07 04:30:16.193697
+Config  : ./erp-psd-demo/private/backups/20250207_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250207_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250207_103006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-07 10:30:16.478671
+Config  : ./erp-psd-demo/private/backups/20250207_103006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250207_103006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250207_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-07 16:30:15.808955
+Config  : ./erp-psd-demo/private/backups/20250207_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250207_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250207_223006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-07 22:30:19.038060
+Config  : ./erp-psd-demo/private/backups/20250207_223006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250207_223006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250208_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-08 04:30:18.932850
+Config  : ./erp-psd-demo/private/backups/20250208_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250208_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250208_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-08 10:30:18.454111
+Config  : ./erp-psd-demo/private/backups/20250208_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250208_103005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250208_163006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-08 16:30:17.765761
+Config  : ./erp-psd-demo/private/backups/20250208_163006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250208_163006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250208_223006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-08 22:30:22.754892
+Config  : ./erp-psd-demo/private/backups/20250208_223006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250208_223006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250209_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-09 04:30:23.679745
+Config  : ./erp-psd-demo/private/backups/20250209_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250209_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250209_103006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-09 10:30:21.685281
+Config  : ./erp-psd-demo/private/backups/20250209_103006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250209_103006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250209_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-09 16:30:20.764011
+Config  : ./erp-psd-demo/private/backups/20250209_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250209_163005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250209_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-09 22:30:21.063100
+Config  : ./erp-psd-demo/private/backups/20250209_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250209_223005-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250210_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-10 04:30:22.778539
+Config  : ./erp-psd-demo/private/backups/20250210_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250210_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250210_103007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-10 10:30:28.142065
+Config  : ./erp-psd-demo/private/backups/20250210_103007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250210_103007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250210_163009-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-10 16:30:33.158330
+Config  : ./erp-psd-demo/private/backups/20250210_163009-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250210_163009-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250210_223008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-10 22:30:31.631732
+Config  : ./erp-psd-demo/private/backups/20250210_223008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250210_223008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250211_043008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-11 04:30:30.493117
+Config  : ./erp-psd-demo/private/backups/20250211_043008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250211_043008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250211_103007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-11 10:30:30.996950
+Config  : ./erp-psd-demo/private/backups/20250211_103007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250211_103007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250211_163008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-11 16:30:30.655454
+Config  : ./erp-psd-demo/private/backups/20250211_163008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250211_163008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250211_223007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-11 22:30:30.516549
+Config  : ./erp-psd-demo/private/backups/20250211_223007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250211_223007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250212_043009-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-12 04:30:32.115936
+Config  : ./erp-psd-demo/private/backups/20250212_043009-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250212_043009-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250212_103008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-12 10:30:30.361143
+Config  : ./erp-psd-demo/private/backups/20250212_103008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250212_103008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250212_163008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-12 16:30:30.232269
+Config  : ./erp-psd-demo/private/backups/20250212_163008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250212_163008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250212_223007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-12 22:30:31.368438
+Config  : ./erp-psd-demo/private/backups/20250212_223007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250212_223007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250213_043007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-13 04:30:28.581260
+Config  : ./erp-psd-demo/private/backups/20250213_043007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250213_043007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250213_103007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-13 10:30:28.859386
+Config  : ./erp-psd-demo/private/backups/20250213_103007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250213_103007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250213_163007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-13 16:30:30.366631
+Config  : ./erp-psd-demo/private/backups/20250213_163007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250213_163007-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250213_223008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-13 22:30:31.012954
+Config  : ./erp-psd-demo/private/backups/20250213_223008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250213_223008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250214_043008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-14 04:30:30.192950
+Config  : ./erp-psd-demo/private/backups/20250214_043008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250214_043008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250214_103008-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-14 10:30:29.955826
+Config  : ./erp-psd-demo/private/backups/20250214_103008-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250214_103008-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250214_163006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-14 16:30:19.564990
+Config  : ./erp-psd-demo/private/backups/20250214_163006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250214_163006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250214_223006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-14 22:30:17.152966
+Config  : ./erp-psd-demo/private/backups/20250214_223006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250214_223006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250215_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-15 04:30:17.589358
+Config  : ./erp-psd-demo/private/backups/20250215_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250215_043006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250215_103006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-15 10:30:20.615605
+Config  : ./erp-psd-demo/private/backups/20250215_103006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250215_103006-erp-psd-demo-database.sql.gz         746.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250215_163006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-15 16:30:20.207207
+Config  : ./erp-psd-demo/private/backups/20250215_163006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250215_163006-erp-psd-demo-database.sql.gz         790.8KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250215_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-15 22:30:24.369281
+Config  : ./erp-psd-demo/private/backups/20250215_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250215_223005-erp-psd-demo-database.sql.gz         796.6KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250216_043007-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-16 04:30:23.279416
+Config  : ./erp-psd-demo/private/backups/20250216_043007-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250216_043007-erp-psd-demo-database.sql.gz         803.8KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250216_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-16 10:30:20.595394
+Config  : ./erp-psd-demo/private/backups/20250216_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250216_103005-erp-psd-demo-database.sql.gz         809.4KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250216_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-16 16:30:19.937674
+Config  : ./erp-psd-demo/private/backups/20250216_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250216_163005-erp-psd-demo-database.sql.gz         814.8KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250216_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-16 22:30:19.780086
+Config  : ./erp-psd-demo/private/backups/20250216_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250216_223005-erp-psd-demo-database.sql.gz         820.1KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250217_043006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-17 04:30:23.525872
+Config  : ./erp-psd-demo/private/backups/20250217_043006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250217_043006-erp-psd-demo-database.sql.gz         827.2KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250217_103006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-17 10:30:19.907375
+Config  : ./erp-psd-demo/private/backups/20250217_103006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250217_103006-erp-psd-demo-database.sql.gz         832.4KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250217_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-17 16:30:16.748904
+Config  : ./erp-psd-demo/private/backups/20250217_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250217_163005-erp-psd-demo-database.sql.gz         858.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250217_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-17 22:30:17.500637
+Config  : ./erp-psd-demo/private/backups/20250217_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250217_223005-erp-psd-demo-database.sql.gz         889.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250218_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-18 04:30:17.930153
+Config  : ./erp-psd-demo/private/backups/20250218_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250218_043005-erp-psd-demo-database.sql.gz         896.3KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250218_103004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-18 10:30:14.390187
+Config  : ./erp-psd-demo/private/backups/20250218_103004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250218_103004-erp-psd-demo-database.sql.gz         901.9KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250218_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-18 16:30:18.013750
+Config  : ./erp-psd-demo/private/backups/20250218_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250218_163004-erp-psd-demo-database.sql.gz         909.9KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250218_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-18 22:30:16.032810
+Config  : ./erp-psd-demo/private/backups/20250218_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250218_223005-erp-psd-demo-database.sql.gz         917.2KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250219_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-19 04:30:17.162731
+Config  : ./erp-psd-demo/private/backups/20250219_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250219_043005-erp-psd-demo-database.sql.gz         923.8KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250219_103006-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-19 10:30:18.801935
+Config  : ./erp-psd-demo/private/backups/20250219_103006-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250219_103006-erp-psd-demo-database.sql.gz         930.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250219_163004-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-19 16:30:16.297756
+Config  : ./erp-psd-demo/private/backups/20250219_163004-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250219_163004-erp-psd-demo-database.sql.gz         969.4KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250219_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-19 22:30:14.997977
+Config  : ./erp-psd-demo/private/backups/20250219_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250219_223005-erp-psd-demo-database.sql.gz         974.5KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250220_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-20 04:30:16.275668
+Config  : ./erp-psd-demo/private/backups/20250220_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250220_043005-erp-psd-demo-database.sql.gz         981.3KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250220_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-20 10:30:18.426022
+Config  : ./erp-psd-demo/private/backups/20250220_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250220_103005-erp-psd-demo-database.sql.gz         986.6KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250220_163005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-20 16:30:15.987719
+Config  : ./erp-psd-demo/private/backups/20250220_163005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250220_163005-erp-psd-demo-database.sql.gz         1006.6KiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250220_223005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-20 22:30:16.563100
+Config  : ./erp-psd-demo/private/backups/20250220_223005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250220_223005-erp-psd-demo-database.sql.gz         1.0MiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250221_043005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-21 04:30:16.983105
+Config  : ./erp-psd-demo/private/backups/20250221_043005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250221_043005-erp-psd-demo-database.sql.gz         1.0MiB
+Backup for Site erp-psd-demo has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _31b1668520928051 -p********** _31b1668520928051 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./erp-psd-demo/private/backups/20250221_103005-erp-psd-demo-database.sql.gz
+
+Backup Summary for erp-psd-demo at 2025-02-21 10:30:15.802675
+Config  : ./erp-psd-demo/private/backups/20250221_103005-erp-psd-demo-site_config_backup.json 213.0B
+Database: ./erp-psd-demo/private/backups/20250221_103005-erp-psd-demo-database.sql.gz         1.0MiB
+Backup for Site erp-psd-demo has been successfully completed

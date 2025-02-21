@@ -1,0 +1,4 @@
+2024-12-31 06:15:01,742 DEBUG cd erpnext-card && python3 -m venv env
+2024-12-31 06:15:05,599 DEBUG cd erpnext-card && /home/frappeusererp/erpnext-demo/erpnext-card/env/bin/python -m pip install --quiet --upgrade pip
+2024-12-31 06:15:06,840 DEBUG cd erpnext-card && /home/frappeusererp/erpnext-demo/erpnext-card/env/bin/python -m pip install --quiet wheel
+2024-12-31 06:15:07,469 WARNING /usr/local/bin/bench init erpnext-card --frappe-branch version-14 executed with exit code 1
