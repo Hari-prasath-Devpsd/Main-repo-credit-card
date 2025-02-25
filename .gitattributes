@@ -1,1 +1,7 @@
 env/lib/python3.10/site-packages/_maxminddb_geolite2/GeoLite2-City.mmdb filter=lfs diff=lfs merge=lfs -text
+*.mmdb filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.iso filter=lfs diff=lfs merge=lfs -text
